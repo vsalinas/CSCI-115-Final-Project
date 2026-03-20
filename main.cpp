@@ -6,8 +6,13 @@ Assignment: Sorting Algorithms
 
 #include <iostream>
 #include <ctime>
+#include <cstdlib>
+
 #include "SelectionSort.cpp"
 #include "InsertionSort.cpp"
+#include "QuickSort.cpp"
+
+using namespace std;
 //------------------------------------------------------TO-DO-------------------------------------------------------------------
 /*Week 7	Mar 2–Mar 8	
 Implement 3 simple sorts (Insertion/Selection/Bubble)
@@ -46,8 +51,6 @@ void oneArr(int* arr, int size) {
         arr[i] = rand()%1000;
     }
 }
-
-using namespace std;
 //------------------------------------------------------------------------------------------------------------------------------
 //------------------------------------------------------INT MAIN----------------------------------------------------------------
 //------------------------------------------------------------------------------------------------------------------------------
@@ -60,7 +63,7 @@ int main() {
 
     cout << "Select " << endl;
 
-    cin << algorithm;
+    cin >> algorithm;
 
     if (algorithm == 1){
 
